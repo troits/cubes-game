@@ -17,7 +17,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/portal-test",
+                        "outputPath": "dist/cubes-game",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": ["zone.js"],
@@ -58,10 +58,10 @@
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
                         "production": {
-                            "browserTarget": "portal-test:build:production"
+                            "browserTarget": "cubes-game:build:production"
                         },
                         "development": {
-                            "browserTarget": "portal-test:build:development"
+                            "browserTarget": "cubes-game:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -69,7 +69,7 @@
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "portal-test:build"
+                        "browserTarget": "cubes-game:build"
                     }
                 },
                 "test": {
