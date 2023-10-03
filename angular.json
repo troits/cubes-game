@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "portal-test": {
+        "cubes-game": {
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
