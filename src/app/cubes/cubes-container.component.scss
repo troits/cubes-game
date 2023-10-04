@@ -1,12 +1,7 @@
 :host {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
-
-@media (max-width: 800px) {
-    :host {
-        flex-direction: column;
-    }
 }
