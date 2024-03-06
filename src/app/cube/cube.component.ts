@@ -3,6 +3,8 @@ import { Component } from "@angular/core";
 
 @Component({
     selector: "cube",
+    standalone: true,
+    imports: [CommonModule],
     templateUrl: "./cube.component.html",
     styleUrls: ["./cube.component.scss"],
 })

@@ -3,11 +3,11 @@ import { BrowserModule } from "@angular/platform-browser";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { CubeModule } from "src/app/cube.module";
+import { CubesContainerComponent } from "src/app/cubes/cubes-container.component";
 
 @NgModule({
     declarations: [AppComponent],
-    imports: [CubeModule, BrowserModule, AppRoutingModule],
+    imports: [BrowserModule, AppRoutingModule, CubesContainerComponent],
     providers: [],
     bootstrap: [AppComponent],
 })
