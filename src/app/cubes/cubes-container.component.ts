@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { Component, OnInit } from "@angular/core";
+import { Component, ElementRef, HostListener, OnInit } from "@angular/core";
 import { BehaviorSubject } from "rxjs";
 import { CubeComponent } from "src/app/cube/cube.component";
 
@@ -15,11 +15,12 @@ export class CubesContainerComponent implements OnInit {
     protected cube2Vals = new BehaviorSubject<number>(1);
     protected cube3Vals = new BehaviorSubject<number>(1);
 
-    public ngOnInit(): void {
+    @HostListener("document:click", ["$event"])
+    public clickout(event: MouseEvent) {
         this.retry();
     }
 
-    public onCubeClick() {
+    public ngOnInit(): void {
         this.retry();
     }
 
