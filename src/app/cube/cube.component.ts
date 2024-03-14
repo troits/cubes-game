@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
     selector: "cube",
@@ -9,5 +9,6 @@ import { Component } from "@angular/core";
     styleUrls: ["./cube.component.scss"],
 })
 export class CubeComponent {
+    @Input()
     public value: number = 1;
 }

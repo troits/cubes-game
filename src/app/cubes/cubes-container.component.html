@@ -1,3 +1,3 @@
-<cube></cube>
-<cube></cube>
-<cube></cube>
+<cube (click)="onCubeClick(cube1Vals)" [value]="(cube1Vals | async) ?? 1"></cube>
+<cube (click)="onCubeClick(cube2Vals)" [value]="(cube2Vals | async) ?? 1"></cube>
+<cube (click)="onCubeClick(cube3Vals)" [value]="(cube3Vals | async) ?? 1"></cube>
