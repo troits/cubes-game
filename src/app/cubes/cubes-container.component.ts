@@ -15,9 +15,15 @@ export class CubesContainerComponent implements OnInit {
     protected cube2Vals = new BehaviorSubject<number>(1);
     protected cube3Vals = new BehaviorSubject<number>(1);
 
-    public ngOnInit(): void {}
+    public ngOnInit(): void {
+        this.retry();
+    }
 
     public onCubeClick() {
+        this.retry();
+    }
+
+    private retry() {
         this.cube1Vals.next(getRandomInt(1, 6));
         this.cube2Vals.next(getRandomInt(1, 6));
         this.cube3Vals.next(getRandomInt(1, 6));
