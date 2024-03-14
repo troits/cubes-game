@@ -15,8 +15,8 @@ export class CubesContainerComponent implements OnInit {
     protected cube2Vals = new BehaviorSubject<number>(1);
     protected cube3Vals = new BehaviorSubject<number>(1);
 
-    @HostListener("document:click", ["$event"])
-    public clickout(event: MouseEvent) {
+    @HostListener("document:click")
+    public clickout(): void {
         this.retry();
     }
 
@@ -24,7 +24,7 @@ export class CubesContainerComponent implements OnInit {
         this.retry();
     }
 
-    private retry() {
+    private retry(): void {
         this.cube1Vals.next(getRandomInt(1, 6));
         this.cube2Vals.next(getRandomInt(1, 6));
         this.cube3Vals.next(getRandomInt(1, 6));
