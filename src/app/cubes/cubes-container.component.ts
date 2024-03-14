@@ -17,8 +17,10 @@ export class CubesContainerComponent implements OnInit {
 
     public ngOnInit(): void {}
 
-    onCubeClick(subj: BehaviorSubject<number>) {
-        subj.next(getRandomInt(1, 6));
+    public onCubeClick() {
+        this.cube1Vals.next(getRandomInt(1, 6));
+        this.cube2Vals.next(getRandomInt(1, 6));
+        this.cube3Vals.next(getRandomInt(1, 6));
     }
 }
 
