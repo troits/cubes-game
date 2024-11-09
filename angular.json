@@ -18,7 +18,7 @@
                     "builder": "@angular-devkit/build-angular:application",
                     "options": {
                         "outputPath": {
-                          "base": "dist/cubes-game"
+                            "base": "dist/cubes-game"
                         },
                         "index": "src/index.html",
                         "polyfills": ["zone.js"],
@@ -46,7 +46,7 @@
                             "outputHashing": "all"
                         },
                         "development": {
-                          "optimization": false,
+                            "optimization": false,
                             "extractLicenses": false,
                             "sourceMap": true,
                             "namedChunks": true
@@ -58,10 +58,10 @@
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
                         "production": {
-                          "buildTarget": "cubes-game:build:production"
+                            "buildTarget": "cubes-game:build:production"
                         },
                         "development": {
-                          "buildTarget": "cubes-game:build:development"
+                            "buildTarget": "cubes-game:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -69,7 +69,7 @@
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                      "buildTarget": "cubes-game:build"
+                        "buildTarget": "cubes-game:build"
                     }
                 },
                 "test": {
