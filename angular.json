@@ -27,7 +27,8 @@
                         "assets": ["src/favicon.ico", "src/assets"],
                         "styles": ["src/styles.scss"],
                         "scripts": [],
-                        "browser": "src/main.ts"
+                        "browser": "src/main.ts",
+                        "baseHref": "https://troits.github.io/cubes-game/"
                     },
                     "configurations": {
                         "production": {
