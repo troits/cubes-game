@@ -35,8 +35,6 @@ npm-debug.log
 /libpeerconnection.log
 testem.log
 /typings
-.yarn/*
-.yarnrc.yml
 
 # System files
 .DS_Store

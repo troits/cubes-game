@@ -18,7 +18,7 @@
           "builder": "@angular/build:application",
           "options": {
             "outputPath": {
-              "base": "dist/cubes-game"
+              "base": "docs"
             },
             "index": "src/index.html",
             "tsConfig": "tsconfig.app.json",
