@@ -6,7 +6,7 @@ import { CubeComponent } from "../cube/cube.component";
 @Component({
   selector: "cubes",
   standalone: true,
-  imports: [CommonModule, CubeComponent],
+  imports: [CommonModule, CubeComponent] as const,
   templateUrl: "./cubes-container.component.html",
   styleUrls: ["./cubes-container.component.scss"],
 })
