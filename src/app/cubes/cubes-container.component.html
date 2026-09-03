@@ -1,6 +1,6 @@
-<h1>{{ sumVals$ | async }}</h1>
+<h1 class="sum">{{ sumVals$ | async }}</h1>
 <div class="cubes-container">
-    <cube [value]="(cube1Vals$ | async) ?? 1"></cube>
-    <cube [value]="(cube2Vals$ | async) ?? 1"></cube>
-    <cube [value]="(cube3Vals$ | async) ?? 1"></cube>
+  <cube [value]="(cube1Vals$ | async) ?? 1"></cube>
+  <cube [value]="(cube2Vals$ | async) ?? 1"></cube>
+  <cube [value]="(cube3Vals$ | async) ?? 1"></cube>
 </div>
