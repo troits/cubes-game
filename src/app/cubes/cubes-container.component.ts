@@ -5,7 +5,6 @@ import { CubeComponent } from "../cube/cube.component";
 
 @Component({
   selector: "cubes",
-  standalone: true,
   imports: [CommonModule, CubeComponent] as const,
   templateUrl: "./cubes-container.component.html",
   styleUrls: ["./cubes-container.component.scss"],
@@ -25,7 +24,7 @@ export class CubesContainerComponent implements OnInit {
   }
 
   public ngOnInit(): void {
-    this.retry();
+     this.retry();
   }
 
   private retry(): void {
