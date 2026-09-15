@@ -24,7 +24,6 @@ export class CubesContainerComponent implements OnInit {
   }
 
   public ngOnInit(): void {
-     this.retry();
   }
 
   private retry(): void {
