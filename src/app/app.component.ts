@@ -5,9 +5,9 @@ import { CubesContainerComponent } from "./cubes/cubes-container.component";
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
-  imports: [RouterOutlet, CubesContainerComponent], // Import dependencies directly
+  imports: [RouterOutlet], // Import dependencies directly
   styleUrls: ["./app.component.scss"],
 })
 export class AppComponent {
-  title = "cubes-game";
+  title = "angular-apps";
 }
